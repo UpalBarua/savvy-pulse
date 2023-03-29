@@ -1,0 +1,12 @@
+.avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.imgTd {
+  display: flex;
+  justify-content: center;
+}

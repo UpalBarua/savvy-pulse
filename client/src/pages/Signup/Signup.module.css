@@ -1,0 +1,27 @@
+.signup {
+  /* padding: var(--spacing-100); */
+  width: min(100vw - 2rem, 25rem);
+  margin-inline: auto;
+}
+
+.btnGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-400);
+  text-align: center;
+  width: 100%;
+  font-size: var(--fs-500);
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  padding-block: var(--spacing-200);
+}
+
+.suggestion {
+  text-align: center;
+  margin-block: var(--spacing-600);
+  color: var(--clr-accent-400);
+}

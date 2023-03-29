@@ -1,0 +1,22 @@
+.notFound {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.img {
+  width: 15rem;
+  margin-bottom: var(--spacing-300);
+}
+
+.link {
+  border: 3px solid lime;
+}
+
+@media screen and (min-width: 48em) {
+  .img {
+    width: 20em;
+  }
+}

@@ -1,0 +1,46 @@
+.overlay {
+  display: grid;
+  place-content: center;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(28, 28, 30, 0.75);
+  transform: scale(0);
+  z-index: 20;
+}
+
+.overlay[data-visible='true'] {
+  transform: scale(1);
+}
+
+.modal {
+  background-color: var(--clr-dark-500);
+  padding: var(--spacing-500);
+  border-radius: var(--border-radius);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-500);
+}
+
+.toggle {
+  display: grid;
+  padding: var(--spacing-200);
+  border-radius: 50%;
+  background-color: var(--clr-dark-300);
+  color: var(--clr-light-400);
+  border: 0;
+}
+
+.title {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-semibold);
+}
+
+.purchaseForm {
+  width: min(100vw - 4rem, 25rem);
+  height: 25rem;
+  overflow-y: scroll;
+}

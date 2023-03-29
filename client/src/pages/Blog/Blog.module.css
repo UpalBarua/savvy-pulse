@@ -1,0 +1,12 @@
+.article {
+  background-color: var(--clr-dark-400);
+  padding: var(--spacing-500);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.question {
+  font-size: var(--fs-600);
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--spacing-300);
+}

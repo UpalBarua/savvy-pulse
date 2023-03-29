@@ -1,0 +1,10 @@
+.ErrorMessage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--spacing-200);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-bold);
+  padding-block: var(--spacing-800);
+}

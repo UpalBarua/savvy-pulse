@@ -1,0 +1,5 @@
+.addProduct {
+  width: min(100vw - 2rem, 25rem);
+  padding: var(--spacing-400);
+  margin-inline: auto;
+}
