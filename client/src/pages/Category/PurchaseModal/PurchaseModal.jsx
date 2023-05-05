@@ -24,7 +24,7 @@ const PurchaseModal = ({ isModalOpen, handleModalClose, modalData }) => {
 
     try {
       const response = await axios.post(
-        'https://savvy-pulse-upalbarua.vercel.app/orders',
+        'http://localhost:3000/orders',
         newPurchase
       );
       if (response?.data?.acknowledged) {

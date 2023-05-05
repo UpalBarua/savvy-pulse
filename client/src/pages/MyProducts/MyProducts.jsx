@@ -23,7 +23,7 @@ const MyProducts = () => {
   const deleteProduct = async () => {
     try {
       const response = await axios.delete(
-        `https://savvy-pulse-upalbarua.vercel.app/my-products/delete/${deleteId}`
+        `http://localhost:3000/my-products/delete/${deleteId}`
       );
 
       if (response?.data?.deletedCount > 0) {
@@ -59,7 +59,7 @@ const MyProducts = () => {
     queryFn: async () => {
       try {
         const response = await axios.get(
-          `https://savvy-pulse-upalbarua.vercel.app/my-products/${user?.email}`
+          `http://localhost:3000/my-products/${user?.email}`
         );
         return response.data;
       } catch (error) {

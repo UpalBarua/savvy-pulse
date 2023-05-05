@@ -9,7 +9,7 @@ const Advertisement = () => {
     queryKey: ['advertisedData'],
     queryFn: async () => {
       const response = await axios.get(
-        'https://savvy-pulse-upalbarua.vercel.app/my-products/advertised',
+        'http://localhost:3000/my-products/advertised',
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('accessToken')}`,

@@ -19,7 +19,7 @@ const AllSellers = () => {
     queryFn: async () => {
       try {
         const response = await axios.get(
-          'https://savvy-pulse-upalbarua.vercel.app/user/all?type=seller',
+          'http://localhost:3000/user/all?type=seller',
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem('accessToken')}`,
@@ -36,7 +36,7 @@ const AllSellers = () => {
   const deleteSeller = async () => {
     try {
       const response = await axios.delete(
-        `https://savvy-pulse-upalbarua.vercel.app/user/delete/${deleteId}`
+        `http://localhost:3000/user/delete/${deleteId}`
       );
 
       if (response?.data?.deletedCount > 0) {

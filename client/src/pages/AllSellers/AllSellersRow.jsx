@@ -8,7 +8,7 @@ const AllSellerRow = ({ seller, handleDelete, refetch }) => {
   const handleSellerVerification = async () => {
     try {
       const response = await axios.patch(
-        `https://savvy-pulse-upalbarua.vercel.app/user/verify/${_id}`
+        `http://localhost:3000/user/verify/${_id}`
       );
 
       if (response?.data?.modifiedCount > 0) {

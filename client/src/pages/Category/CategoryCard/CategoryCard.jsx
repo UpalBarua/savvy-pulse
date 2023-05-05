@@ -36,7 +36,7 @@ const CategoryCard = ({ product, handleModalOpen, setModalData, refetch }) => {
   useEffect(() => {
     const fetchIsVerified = async () => {
       const response = await axios.get(
-        `https://savvy-pulse-upalbarua.vercel.app/user/seller/verify/${seller}`
+        `http://localhost:3000/user/seller/verify/${seller}`
       );
       setIsVerified(response.data);
     };
@@ -47,7 +47,7 @@ const CategoryCard = ({ product, handleModalOpen, setModalData, refetch }) => {
   const handleWishlistToggle = async () => {
     try {
       const response = await axios.patch(
-        `https://savvy-pulse-upalbarua.vercel.app/my-products/wishlist/new/${_id}`
+        `http://localhost:3000/my-products/wishlist/new/${_id}`
       );
 
       if (response?.data?.modifiedCount > 0) {

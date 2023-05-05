@@ -24,7 +24,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        'https://savvy-pulse-upalbarua.vercel.app/user/new',
+        'http://localhost:3000/user/new',
         newUser
       );
 

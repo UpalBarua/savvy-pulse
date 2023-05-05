@@ -7,7 +7,7 @@ const useUserType = (email) => {
   useEffect(() => {
     const fetchUserType = async () => {
       const response = await axios.get(
-        `https://savvy-pulse-upalbarua.vercel.app/user/type/${email}`
+        `http://localhost:3000/user/type/${email}`
       );
       setUserType(response?.data);
     };

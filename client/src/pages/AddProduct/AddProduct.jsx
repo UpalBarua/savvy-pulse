@@ -38,7 +38,7 @@ const AddProduct = () => {
 
     try {
       const response = await axios.post(
-        'https://savvy-pulse-upalbarua.vercel.app/products/new',
+        'http://localhost:3000/products/new',
         formData
       );
       if (response?.data?.acknowledged) {

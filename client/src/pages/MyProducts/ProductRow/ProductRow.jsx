@@ -18,7 +18,7 @@ const ProductRow = ({ product, refetch, handleDelete }) => {
   const handleProductSell = async () => {
     try {
       const response = await axios.patch(
-        `https://savvy-pulse-upalbarua.vercel.app/my-products/sell/${_id}`
+        `http://localhost:3000/my-products/sell/${_id}`
       );
 
       if (response?.data?.modifiedCount > 0) {
@@ -32,7 +32,7 @@ const ProductRow = ({ product, refetch, handleDelete }) => {
   const handleProductAdvertisement = async () => {
     try {
       const response = await axios.patch(
-        `https://savvy-pulse-upalbarua.vercel.app/my-products/advertisements/${_id}`
+        `http://localhost:3000/my-products/advertisements/${_id}`
       );
 
       if (response?.data?.modifiedCount > 0) {

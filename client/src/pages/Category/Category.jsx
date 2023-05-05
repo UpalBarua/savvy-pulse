@@ -18,7 +18,7 @@ const Category = () => {
     queryKey: ['products'],
     queryFn: async () => {
       const response = await axios.get(
-        `https://savvy-pulse-upalbarua.vercel.app/products/${params.type}`,
+        `http://localhost:3000/products/${params.type}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('accessToken')}`,

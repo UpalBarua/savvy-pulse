@@ -9,7 +9,7 @@ const Wishlist = () => {
     queryKey: ['wishlistData'],
     queryFn: async () => {
       const response = await axios.get(
-        'https://savvy-pulse-upalbarua.vercel.app/my-products/wishlist',
+        'http://localhost:3000/my-products/wishlist',
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('accessToken')}`,

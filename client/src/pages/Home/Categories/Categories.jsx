@@ -10,9 +10,7 @@ const Categories = () => {
   const { data: categories = [] } = useQuery({
     queryKey: ['categories'],
     queryFn: async () => {
-      const response = await axios.get(
-        'https://savvy-pulse-upalbarua.vercel.app/categories'
-      );
+      const response = await axios.get('http://localhost:3000/categories');
       return response.data;
     },
   });

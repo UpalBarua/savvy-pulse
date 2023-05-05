@@ -9,9 +9,7 @@ const Blog = () => {
   const { data: blogData = [] } = useQuery({
     queryKey: ['blogData'],
     queryFn: async () => {
-      const response = await axios.get(
-        'https://savvy-pulse-upalbarua.vercel.app/blog'
-      );
+      const response = await axios.get('http://localhost:3000/blog');
       return response.data;
     },
   });
