@@ -1,21 +1,35 @@
-# SavvyPulse
+# Savvy Pulse
 
-SavvyPulse is a platform where you find the best guitars in town!
+Savvy Pulse is an online marketplace connecting worldwide buyers and sellers of high-quality second-hand guitars. With detailed listings and wish lists, we help guitar enthusiasts find their perfect match.
 
-Live Site: https://savvy-pulse.web.app/
+## Getting Started
 
-## Tools used ️⚒️
+First, run the development server:
 
-- **Vite** as a package bundler.
-- **React** for the UI.
-- **CSS Modules** for styling.
-- **Firebase** for authentication.
-- **MongoDB** for database.
+```bash
+pnpm install
+pnpm dev
+```
 
-## About ❔
+Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
+
+## Live Site
+
+[https://savvy-pulse.web.app/](https://savvy-pulse.web.app/)
+
+## Features
 
 - No CSS framework or library used.
 - Navbar and modal were created from scratch.
 - Fully responsive for mobile and tablet devices.
 - Wishlist functionality was implemented.
 - Two custom hooks were used.
+
+## Tech Stack
+
+- React
+- Vanilla CSS
+- Vite
+- Firebase
+- Express.js
+- MongoDB
